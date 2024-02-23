@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApp7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+                Title="Ежедневник" Height="450" Width="800" Background="#FFD1D2E8">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0,5*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="Delete" Content="Удалить запись" Grid.Row="9" Grid.Column="0" Click="Delete_Click" Background="#FFD78AA3" FontSize="14"/>
+
+        <ListBox x:Name="List" Grid.Row="1" Grid.RowSpan="8" Grid.Column="0" SelectionChanged="List_SelectionChanged" Background="#FFD1D2E8"/>
+
+        <DatePicker x:Name="Date" VerticalAlignment="Center" SelectedDateChanged="Date_SelectedDateChanged" Grid.Row="0" Grid.Column="0"/>
+
+        <TextBlock Text="Название: " Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  Height="20" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+
+        <TextBox x:Name="Name" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"  Grid.RowSpan="2" Background="#FFBEBDE3" Height="50">
+
+        </TextBox>
+        <TextBlock Text="Описание: " Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Height="20" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+        <TextBox x:Name="Description" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"   Background="#FFBEBDE3" Grid.RowSpan="2" Height="50">
+
+        </TextBox>
+
+        <Button x:Name="Create" Content="Создать" Grid.Row="9" Grid.Column="1" Click="Create_Click"  Grid.RowSpan="2" Background="#FF93BE9C" FontSize="14" Width="120" Height="30"/>
+        <Button x:Name="Save" Content="Сохранить" Grid.Row="9" Grid.Column="2" Click="Save_Click"  Grid.RowSpan="2" Foreground="Black" Background="#FFB39BB7" FontSize="14" Width="120" Height="30">
+
+        </Button>
+    </Grid>
+</Window>

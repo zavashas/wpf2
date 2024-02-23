@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfNote xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Note>
+    <Title>1 заметка</Title>
+    <Description>описание</Description>
+    <Date>2024-02-22T00:00:00</Date>
+  </Note>
+  <Note>
+    <Title>223</Title>
+    <Description>22</Description>
+    <Date>2024-02-22T00:00:00</Date>
+  </Note>
+  <Note>
+    <Title>оп</Title>
+    <Description>22</Description>
+    <Date>2024-03-03T00:00:00</Date>
+  </Note>
+</ArrayOfNote>
